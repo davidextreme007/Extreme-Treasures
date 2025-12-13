@@ -1,2 +1,2 @@
 # Extreme Treasures
-Juego de navegador Extreme Treasures (Beta)
+Juego de navegador Extreme Treasures
