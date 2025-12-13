@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>💰 EXTREME TREASURES (BETA) 💣</title>
+    <title>💰 EXTREME TREASURES 💣</title>
     
-    <meta property="og:title" content="EXTREME TREASURES (BETA)">
-    <meta property="og:description" content="¡El juego de atrapar tesoros y evitar bombas creado por David Extreme!">
-    <meta property="og:image" content="https://i.postimg.cc/hjpwgGMQ/Fondo_menuprincipal.png"> <meta property="og:url" content="TU_URL_DEL_JUEGO">
+    <meta property="og:title" content="Extreme Treasures">
+    <meta property="og:description" content="¡Atrapa tesoros, esquiva bombas y rompe tu propio récord en este adictivo juego de reflejos!">
+    <meta property="og:image" content="https://i.postimg.cc/CKPs2Xt0/previsualizacion.jpg">
+    <meta property="og:url" content="TU_URL_DEL_JUEGO">
+    
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/3NR5Tsrm/icono.png">
+    <link rel="icon" href="https://i.postimg.cc/3NR5Tsrm/icono.png">
     
     <style>
         /* CSS Básico para el Juego de Navegador */
@@ -141,7 +145,7 @@
 </head>
 <body>
 
-    <h1 id="game-title-text">EXTREME<br>TREASURES (BETA)</h1>
+    <h1 id="game-title-text">EXTREME<br>TREASURES</h1>
 
     <div id="menu-container">
         <h2>Menú Principal</h2>
@@ -201,7 +205,7 @@
     <div id="about-container" style="display: none;">
         <h2>✨ Acerca del juego</h2>
         <div class="info-content">
-            <p><strong>Versión 1.1</strong></p>
+            <p><strong>Versión 1.2</strong></p>
             <p>Creado por DX GAMES</p>
             <br>
             <h3>Registro de actualizaciones:</h3>
@@ -211,6 +215,8 @@
             <p>&nbsp;&nbsp;&nbsp; - Se añadieron dos nuevas canciones.</p>
             <p>&nbsp;&nbsp;&nbsp; - Se agregó un sistema de récords persistente.</p>
             <p>&nbsp;&nbsp;&nbsp; - Se agregó el menú "¿Como se juega?" con las reglas básicas y mecánicas del juego.</p>
+            <p>• Versión 1.2</p>
+            <p>&nbsp;&nbsp;&nbsp; - Eliminación de la etiqueta "BETA" y optimización de metadatos para compartir.</p>
         </div>
         <button class="menu-button" style="margin-top: 20px;" onclick="showMainMenu()">¡Gracias por jugar! (Volver)</button>
     </div>
@@ -272,8 +278,8 @@
             { name: "¡Más musica próximamente!", url: null, selectable: false }
         ];
         
-        // --- CONSTANTE DE VERSIÓN ---
-        const GAME_VERSION = "v1.1"; 
+        // --- CONSTANTE DE VERSIÓN ACTUALIZADA ---
+        const GAME_VERSION = "v1.2"; 
 
         let settings = {
             sound: true, 
@@ -647,7 +653,7 @@
         function drawHUD() {
             drawLifeBar();
 
-            // Dibujar la versión del juego (v1.1)
+            // Dibujar la versión del juego (v1.2)
             ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
             ctx.font = '14px Arial';
             ctx.textAlign = 'right';
@@ -985,4 +991,4 @@
         });
     </script>
 </body>
-</html>l>
+</html>
